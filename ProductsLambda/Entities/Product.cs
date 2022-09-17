@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-
-namespace ProductsLambda.Entities {
+﻿namespace ProductsLambda.Entities {
     public class Product {
         // Attributes
         public string Name { get; set; }
@@ -14,7 +12,7 @@ namespace ProductsLambda.Entities {
 
         // Methods
         public override string ToString() {
-            return $"{Name}, ${Price.ToString("F2", CultureInfo.InvariantCulture)}";
+            return $"{Name}";
         }
     }
 }
